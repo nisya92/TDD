@@ -1,4 +1,5 @@
 import string
 
-def crypt():
-    pass
+def crypt(message):
+    caracteres = string.ascii_letters + string.punctuation + string.digits + " "
+    message_crypte = ""
