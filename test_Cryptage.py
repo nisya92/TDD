@@ -7,7 +7,9 @@ class Cryptage_Test(unittest.TestCase):
 
     def test_crypt_message_avec_pas(self):
         message = "Comment ça mon reuf ?"
-        self.assertEqual(self.instance.crypt(message), "Dpnnfouaçbanpoasfvga@")
+        pas = 1
+        self.assertEqual(self.instance.crypt(message, pas), "Dpnnfouaçbanpoasfvga@")
+
 
 
 if __name__ == '__main__':
