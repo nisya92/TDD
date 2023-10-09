@@ -1,7 +1,7 @@
 class FizzBuzz():
-    def affiche(self, n):
-            liste = ""
-        for i in range(1, n+1):
+    def affiche(self):
+        liste = ""
+        for i in range(1, 101):
             if i % 15 == 0:
                 liste += "FrisBee"
             elif i % 3 == 0:

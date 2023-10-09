@@ -2,7 +2,7 @@ import unittest
 from FizzBuzz import *
 
 class TestFizzBuzz(unittest.TestCase):
-    def setUp(self):
+     def setUp(self):
          self.instance=FizzBuzz()
 
      def test_affiche_sans_param(self):
