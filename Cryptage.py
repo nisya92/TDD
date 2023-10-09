@@ -14,7 +14,6 @@ class Cryptage():
 
         message_crypte += str(pas)
         return message_crypte
-        print(message_crypte)
 
     def decrypt(self, message):
         pas = int(message[-1])
@@ -29,5 +28,5 @@ class Cryptage():
             else:
                 message_decrypte += lettre
 
-        return message_decrypte
         print(message_decrypte)
+        return message_decrypte
