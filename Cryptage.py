@@ -1,10 +1,9 @@
 import string
 
-class Cryptage:
+class Cryptage():
     def crypt(self, message, pas):
         caracteres = string.ascii_letters + string.punctuation + string.digits + " "
         message_crypte = ""
-
         for lettre in message:
             if lettre in caracteres:
                 index = caracteres.index(lettre)
@@ -15,12 +14,14 @@ class Cryptage:
 
         message_crypte += str(pas)
         return message_crypte
+        print(message_crypte)
 
-    def decrypt()
+    def decrypt(self, message):
+        pas = int(message[-1])
         caracteres = string.ascii_letters + string.punctuation + string.digits + " "
         message_decrypte = ""
 
-        for lettre in message:
+        for lettre in message[:-1]:
             if lettre in caracteres:
                 index = caracteres.index(lettre)
                 lettre_decryptee = caracteres[(index - pas) % len(caracteres)]
@@ -29,3 +30,4 @@ class Cryptage:
                 message_decrypte += lettre
 
         return message_decrypte
+        print(message_decrypte)
