@@ -1,1 +1,3 @@
-importer  un test unitaire
+classe  FizzBuzz ():
+     affiche def ():
+        passer
