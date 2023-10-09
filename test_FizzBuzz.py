@@ -1,9 +1,11 @@
-importer  un test unitaire
-depuis  l'import FizzBuzz  * 
+import unittest
+from FizzBuzz import *
+class TestFizzBuzz(unittest.TestCase):
+    def setUp(self):
+         self.instance=FizzBuzz()
 
-classe  TestFizzBuzz ( unittest . TestCase ):
-     configuration def ( soi ):
-         soi . instance = FizzBuzz ()
+     def test_affiche_sans_param(self):
+         self.assertEqual(self.instance.affiche(), "12Fizz")
 
-si  __name__  ==  'principal' :
-     test unitaire . principal ()
+if __name__ == '__main__':
+     unittest.main()
