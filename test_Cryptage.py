@@ -6,8 +6,8 @@ class Cryptage_Test(unittest.TestCase):
         self.instance=Cryptage()
 
     def test_crypt_message(self):
-        message = "Bienvenue en BUT3 Réseau et Télecommunication"
-        self.assertEqual(self.instance.crypt(message), "")
+        message = "Comment ça mon reuf ?"
+        self.assertEqual(self.instance.crypt(message), "Dpnnfouaçbanpoasfvga@")
 
 
 if __name__ == '__main__':
